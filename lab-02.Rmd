@@ -79,6 +79,17 @@ plastic_data_all %>% head(n = 10)
 
 ```{r Ex1, message = FALSE}
 # Write your code here to answer exercise 1
+# view(plastic_data_all)
+
+#   Create a frequency table of coastal countries/territories by region.
+ex1 <- plastic_data_all %>% select('region', 'name', 'code')
+ex1 %>% group_by region 
+
+
+
+
+
+#   Which region has the most number of coastal countries/territories?
 
 
 
